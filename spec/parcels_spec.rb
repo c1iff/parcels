@@ -10,11 +10,6 @@ describe(Parcel) do
     end
   end
 
-# set volume at 4000 cubic inches (1.157 cubic ft) = .314 = $0.50
-# set weight at 5 lb = $7.5
-# set distance at 2500 miles = $7.00
-# set speed to express = $5
-
   describe('#cost_to_ship') do
     it('evaluates the cost to ship based on formula') do
       parcel_cost = Parcel.new(20, 20, 10, 5, 2500, 1)

@@ -13,12 +13,7 @@ class Parcel
   end
 
   define_method(:cost_to_ship) do
-    # cost per pound = $1.50
-    # service charge of $0.50 for each cubic foot beyond 2 cubic feet
-    # 1 cubic foot = 12 * 12 * 12 = 1728
-    # distance represented in miles
-    # cost of distance is set at $1 per 1000 miles
-    # soeed 1 = express shipping, 2 = standard
+
     weight_cost = @weight*1.5
     volume_cost = 0
     cubic_feet = self.volume()/1728.0
